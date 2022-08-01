@@ -1,8 +1,29 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
-.Paragraph{
-    color: red;
+.outer-wrapper{
+    display: flex;
+    width: fit-content;
+    height: 100vh;
+}
+
+.sidebar,
+.background-image{
+    height: 100%;
+    position: relative;
+    min-height: 500px;
+}
+
+.sidebar{
+    flex: auto;
+}
+
+.background-image img{
+    height: 100%
+}
+
+.main-wrapper{
+    min-width: 400px;
 }

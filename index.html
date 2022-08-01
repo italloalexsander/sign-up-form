@@ -4,28 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register your Dog</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="sidebar">
-        <div class="background-image">
-            <p>Logo</p>
+    <div class="outer-wrapper">
+        <div class="sidebar">
+            <div class="background-image">
+                <img src="img/Dog.jpg" alt="A dog running">
+            </div>
         </div>
-    </div>
-    <div class="main-wrapper">
-        <div class="description">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, voluptates voluptatum temporibus sed mollitia corporis quod harum molestias minima eligendi cumque totam dolorum deserunt. Omnis neque fuga asperiores? Explicabo, sit?</p>
-        </div>
-        <div class="form-wrapper">
-            <form>
-                <label for="petName">Pet Name</label>
-                <input type="text" id="petName">
+        <div class="main-wrapper">
+            <div class="description">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, voluptates voluptatum temporibus sed mollitia corporis quod harum molestias minima eligendi cumque totam dolorum deserunt. Omnis neque fuga asperiores? Explicabo, sit?</p>
+            </div>
+            <div class="form-wrapper">
+                <form>
 
-                <label for="ownerName">Owner Name</label>
-                <input type="text" id="ownerName">
-                <button type="submit">Register Pet</button>
-            </form>
+                    <fieldset>
+                        <label for="petName">Dog Name: </label>
+                        <input type="text" id="petName" name="petName">
+
+                        <label for="breed">Breed: </label>
+                        <input type="text" id="breed" name="breed">
+
+                        <label for="ownerName">Owner Name: </label>
+                        <input type="text" id="ownerName" name="ownerName">
+
+                        <label for="ownerEmail">Owner Email: </label>
+                        <input type="email" id="ownerEmail" name="ownerEmail">
+
+                        <label for="password">Password: </label>
+                        <input type="password" id="password" name="password">
+
+                        <label for="passwordConfirm">Confirm your password: </label>
+                        <input type="password" id="passwordConfirm" name="passwordConfirm">
+                    </fieldset>
+                    <button type="submit">Register Pet</button>
+                </form>
+            </div>
         </div>
     </div>
 </body>
